@@ -1,27 +1,49 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { capitalizeFirstLetter } from '../../utils/helpers';
 
-function Nav () {
-    return (
-      <header id="home">
+function Nav(props) {
 
-      <nav id="nav-wrap">
-         <ul id="nav" className="nav">
-            <li><a className="smoothscroll" href="#about">About</a></li>
-	         <li><a className="smoothscroll" href="#web">Portfolio</a></li>
-            <li><a className="smoothscroll" href="#portfolio">Resume</a></li>
-            <li><a className="smoothscroll" href="#contact">Contact</a></li>
-         </ul>
+    const {
+        currentCategory,
+        setContactSelected
+    } = props;
 
+    useEffect(() => {document.title = capitalizeFirstLetter(currentCategory.name);
+  }, [currentCategory]);
+
+  return (
+    <header className="flex-row px-1">
+      <h2>
+        <a data-testid="link" href="/">
+          <span role="img" aria-label="camera"></span> Briana daMota
+        </a>
+      </h2>
+      <nav>
+        <ul className="flex-row">
+        <li className={`mx-2`}>
+          <a data-testid="about" href="#about" onClick={() => setContactSelected(true)}>
+              About Me
+            </a>
+          </li>
+          <li className={`mx-2`}>
+          <a data-testid="portfolio" href="#portfolio" onClick={() => setContactSelected(false)}>
+              Portfolio
+            </a>
+          </li>
+          <li className={`mx-2`}>
+          <a data-testid="resume" href="#resume" onClick={() => setContactSelected(false)}>
+              Resume
+            </a>
+          </li>
+          <li className={`mx-2`}>
+          <a data-testid="contact" href="#contact" onClick={() => setContactSelected(false)}>
+              Contact
+            </a>
+          </li>
+        </ul>
       </nav>
-
-      <div className="row banner">
-         <div className="banner-text">
-               <h1>Briana daMota</h1>
-         </div>
-      </div>
-   </header>
-    );
-  }
-
+    </header>
+  );
+}
 
 export default Nav;

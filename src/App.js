@@ -28,13 +28,8 @@ function App() {
         ></Nav>
       <main>
         <div>
-        {!contactSelected ? (
-          <>
             <About></About>
-          </>
-        ) : (
-           <Contact></Contact>
-        )}
+            <Contact></Contact>
         </div>
       </main>
     </div>
