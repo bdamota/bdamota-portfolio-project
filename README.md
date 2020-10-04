@@ -5,7 +5,7 @@ A simple portfolio built with React to showcase my web development projects.
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Screenshot 
-![image]()
+![image](https://github.com/bdamota/bdamota-portfolio-project/blob/master/Screen%20Shot%202020-10-04%20at%2012.04.45%20AM.png)
 
 ## Installation 
 * Clone GitHub repository
