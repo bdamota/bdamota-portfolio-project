@@ -2,8 +2,10 @@
 
 A simple portfolio built with React to showcase my web development projects. 
 
-## Screenshot 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Screenshot 
+![image]()
 
 ## Installation 
 * Clone GitHub repository
@@ -16,11 +18,11 @@ A simple portfolio built with React to showcase my web development projects.
 * CSS3
 * React
 * JavaScript
+* Bootstrap 
 
 ## License
 MIT license
 
-## This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
