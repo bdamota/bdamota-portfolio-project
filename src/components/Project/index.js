@@ -57,8 +57,8 @@ function Project() {
     <div className="wrapper">
       <h1 id="portfolio">Portfolio</h1>
       {projects.map((project) => (
-           <Card className="cards" style={{display: 'flex', flexDirection: 'row'}}>
-           <Card.Img variant="top" style={{ width: "30%" }}  src={require(`../../assets/cover/${project.image}`)}/>
+           <Card className="cards" style={{display: 'flex', flexDirection: 'row'}} key={project.name}>
+           <Card.Img className="projectImg" variant="top" style={{ width: "30%" }}  src={require(`../../assets/cover/${project.image}`)}  key={project.name}/>
            <Card.Body className="projectInfo"><br></br>
              <Card.Title className="cardTitle">{project.name}</Card.Title>
              <Card.Text className="cardText">

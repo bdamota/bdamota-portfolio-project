@@ -5,13 +5,9 @@ main {
   padding: 50px 30px;
 }
 :root {
-  --primary: #8c54ff;
-  --secondary: #F3A847;
-  --tertiary: #B12704;
   --light: #fafafa;
   --dark: #000000;
   --darker: #111111;
-  --error: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
   --spacing-five: calc(2.5rem);
@@ -41,9 +37,6 @@ body {
 
 }
 
-.nav :focus{ 
-  background-color: darksalmon ;
-}
 
 h1,
 h2,
@@ -104,10 +97,6 @@ header {
 
 header a {
   color: var(--light);
-}
-
-header a:active {
-  color: #8c54ff;
 }
 
 span[role="img"] {
@@ -197,12 +186,16 @@ textarea {
   height: 600px;
 }
 
-#portfolio, #resume, #contact {
-  padding-top: 50px;
+ #portfolio, #resume, #contact {
+  padding-top: 10px;
+}
+
+#about {
+  padding-top: -15px;
 }
 
 #footer {
-  padding-top: 200px;
+  padding-top: 50px;
   margin-left: 35%;
 }
 
@@ -258,5 +251,38 @@ textarea {
 }
 
 .navActive {
-  color: var(--secondary);
+  color: rgb(181, 16, 181);
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 768px) { 
+  .my-2 {
+    height: 300px;
+  }
+
+  .projectImg {
+    height: 125px;
+  }
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) { 
+  .my-2 {
+    height: 250px;
+  }
+
+  .projectImg {
+    height: 100px;
+  }
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 414px) { 
+  .my-2 {
+    height: 150px;
+  }
+
+  .projectImg {
+    height: 75px;
+  }
 }

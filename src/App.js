@@ -1,44 +1,55 @@
 import React, { useState } from 'react';
-import Nav from './components/Header';
+import Container from 'react-bootstrap/Container';
+import Header from './components/Header';
 import About from './components/About';
 import Project from './components/Project';
-import Resume from './components/Resume';
 import ContactForm from './components/Contact';
+import Resume from './components/Resume';
 import Footer from './components/Footer';
 
 function App() {
-  const [contactSelected, setContactSelected] = useState(false);
-  const [categories] = useState([
+  const [navItems] = useState([
     {
-      name: 'commercial',
-      description: 'Photos of grocery stores, food trucks, and other commercial projects',
+      name: 'About me',
+      short: 'about',
     },
-    { name: 'portraits', description: 'Portraits of people in my life' },
-    { name: 'food', description: 'Delicious delicacies' },
-    { name: 'landscape', description: 'Fields, farmhouses, waterfalls, and the beauty of nature' },
+    {
+      name: 'Portfolio',
+      short: 'portfolio',
+    },
+    {
+      name: 'Contact',
+      short: 'contact',
+    },
+    {
+      name: 'Resume',
+      short: 'resume',
+    },
   ]);
+  const [currentNavItem, setCurrentNavItem] = useState(navItems[0]);
 
-  const [currentCategory, setCurrentCategory] = useState(categories[0]);
-
+  function displayComponent(navName) {
+    switch (navName) {
+      case 'Portfolio':
+        return <Project></Project>;
+      case 'Contact':
+        return <ContactForm></ContactForm>;
+      case 'Resume':
+        return <Resume></Resume>;
+      default:
+        return <About></About>;
+    }
+  }
   return (
-    <div>
-        <Nav
-          categories={categories}
-          setCurrentCategory={setCurrentCategory}
-          currentCategory={currentCategory}
-          contactSelected={contactSelected}
-          setContactSelected={setContactSelected}
-        ></Nav>
-      <main>
-        <div>
-            <About></About>
-            <Project></Project>
-            <Resume></Resume>
-            <ContactForm></ContactForm>
-            <Footer></Footer>
-        </div>
-      </main>
-    </div>
+    <Container fluid>
+      <Header
+        navItems={navItems}
+        setCurrentNavItem={setCurrentNavItem}
+        currentNavItem={currentNavItem}
+      ></Header>
+      <main>{displayComponent(currentNavItem.name)}</main>
+      <Footer></Footer>
+    </Container>
   );
 }
 
