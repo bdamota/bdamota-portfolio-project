@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import Nav from './components/Header';
 import About from './components/About';
-import Portfolio from './components/Portfolio';
-import Contact from './components/Contact';
+import Project from './components/Project';
+import ContactForm from './components/Contact';
 
 function App() {
   const [contactSelected, setContactSelected] = useState(false);
@@ -30,8 +30,8 @@ function App() {
       <main>
         <div>
             <About></About>
-            <Portfolio></Portfolio>
-            <Contact></Contact>
+            <Project></Project>
+            <ContactForm></ContactForm>
         </div>
       </main>
     </div>

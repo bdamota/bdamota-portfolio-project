@@ -5,7 +5,7 @@ import Card from 'react-bootstrap/Card';
 function Project() {
   const [projects] = useState([
     {
-      image: 'weather.dashboard.png',
+      image: 'weather.png',
       name: 'Weather Dashboard',
       description: 'A simple weather dashboard to find the weather in multiple cities.',
       tech: 'HTML5 | CSS3 | JavaScript | jQuery | Bootstrap | Moment.js | OpenWeatherAPI',
