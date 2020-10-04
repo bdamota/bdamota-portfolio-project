@@ -41,6 +41,10 @@ body {
 
 }
 
+.nav :focus{ 
+  background-color: darksalmon ;
+}
+
 h1,
 h2,
 h3,
@@ -78,10 +82,11 @@ h6 {
 }
 
 p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-top: 0;
-  font-family: 'Roboto', sans-serif;
-  font-weight: normal;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: lighter;
+  color: darkgray;
 }
 
 a {
@@ -175,10 +180,6 @@ textarea {
   margin-right: auto;
 }
 
-.aboutInfo {
-  display: inline-block;
-}
-
 .flex-row {
   display: flex;
   flex-wrap: wrap;
@@ -212,6 +213,10 @@ textarea {
   margin-bottom: var(--spacing-two);
 }
 
+.headerImage {
+  height: 600px;
+}
+
 .my-5 {
   margin-top: var(--spacing-five);
   margin-bottom: var(--spacing-five);
@@ -237,43 +242,10 @@ textarea {
   padding-bottom: var(--spacing-two);
 }
 
-.card {
-  width: 25%;
-  text-align: center;
+.portfolioCard {
+  display: inline-block;
 }
 
-.img-thumbnail {
-  width: auto;
-  height: 300px;
-  margin-bottom: 50px;
-  cursor: pointer;
-}
-
-.modalBackdrop {
-	background: rgba(0, 0, 0, .65);
-	bottom: 0;
-	left: 0;
-	overflow: auto;
-	position: fixed;
-	right: 0;
-	top: 0;
-	z-index: 1;
-}
-
-.modalContainer {
-	background: var(--darker);
-	border-radius: 5px;
-	max-width: 100%;
-	margin: 50px auto;
-	padding: 15px;
-	width: 960px;
-}
-
-.modalTitle {
-	font-size: 18px;
-	font-weight: 600;
-	margin-bottom: 25px;
-}
 
 button {
 	background: var(--primary);

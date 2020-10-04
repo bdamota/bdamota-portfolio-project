@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import Nav from './components/Nav';
+import Nav from './components/Header';
 import About from './components/About';
+import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
       <main>
         <div>
             <About></About>
+            <Portfolio></Portfolio>
             <Contact></Contact>
         </div>
       </main>
