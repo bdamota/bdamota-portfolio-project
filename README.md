@@ -1,26 +1,28 @@
-# PERSONAL PORTFOLIO  
+# Personal Portfolio   
 
-## PROJECT DESCRIPTION:
+## Project Description:
 A simple portfolio built with React to showcase my web development projects.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## SCREENSHOT: 
+## Screenshot: 
 ![image](https://github.com/bdamota/Weather-Dashboard/blob/master/Screen%20Shot%202020-06-29%20at%205.46.21%20PM.png)
 
-## LINK TO DEPLOYED SITE: 
+## Live Site: 
 https://bdamota.github.io/bdamota-portfolio-project/
 
-## BUILT WITH: 
+## Built With: 
 - HTML5 
 - CSS3 
 - JavaScript 
 - Bootstrap
 - React
 
-## SCREENSHOT: 
-![image](https://github.com/bdamota/Weather-Dashboard/blob/master/Screen%20Shot%202020-06-29%20at%205.46.21%20PM.png)
-
+## Installation 
+* Clone GitHub repository
+* Ensure that npm is installed.
+* npm init 
+* Invoke application using npm start or yarn start. 
 
 ## Available Scripts
 
