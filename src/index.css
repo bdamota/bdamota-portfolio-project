@@ -90,13 +90,12 @@ p {
 }
 
 a {
-  color: var(--tertiary);
   text-decoration: none;
   font-weight: bold;
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 header {
@@ -107,29 +106,8 @@ header a {
   color: var(--light);
 }
 
-button {
-  font-size: 1rem;
-  text-decoration: none;
-  padding: 0.25rem 1rem;
-  border-radius: .5rem;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  margin: 0 1px;
-  background-color: var(--secondary);
-}
-
-button:hover {
-  opacity: .8;
-}
-
-button[disabled] {
-  cursor: default;
-  opacity: .8;
-}
-
-img {
-  max-width: 100%;
+header a:active {
+  color: #8c54ff;
 }
 
 span[role="img"] {
@@ -211,6 +189,7 @@ textarea {
 .my-2 {
   margin-top: var(--spacing-two);
   margin-bottom: var(--spacing-two);
+  height: 450px;
 }
 
 .headerImage {
@@ -242,31 +221,30 @@ textarea {
   padding-bottom: var(--spacing-two);
 }
 
-.portfolioCard {
-  display: inline-block;
+.projectInfo{
+  padding-left: 30px;
 }
 
-
-button {
-	background: var(--primary);
-	border: 0;
-	border-radius: 5px;
-	color: #fff;
-	cursor: pointer;
-	font-size: 16px;
-	font-weight: 600;
-	margin-bottom: 30px;
-	padding: 10px 15px;	
+.cards {
+  padding-bottom: 20px;
 }
 
-a {
-	border-radius: 5px;
-	color: var(--primary);
-	font-weight: 600;
-	padding: 2px 4px;
-	margin-left: -2px;
-	margin-right: -2px;
-	
+.cardTitle {
+   font-style: normal;
+}
+
+.cardLinkB {
+  padding-left: 20px;
+  color: rgb(181, 16, 181);
+}
+
+.cardLinkA {
+  color: rgb(181, 16, 181);
+}
+
+.cardText {
+  padding-bottom: 5px;
+  padding-top: 5px;
 }
 
 .navActive {
