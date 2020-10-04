@@ -65,8 +65,8 @@ function Project() {
                {project.description}<br></br> <br></br>
                Tech: {project.tech}
              </Card.Text>
-             <Card.Link className="cardLinkA" href={project.github}>See Code</Card.Link>
-            <Card.Link className="cardLinkB" href={project.site}>Live Site</Card.Link>
+             <Card.Link className="cardLinkA" href={project.github} target="blank">See Code</Card.Link>
+            <Card.Link className="cardLinkB" href={project.site} target="blank">Live Site</Card.Link>
            </Card.Body>
          </Card>
       ))}
