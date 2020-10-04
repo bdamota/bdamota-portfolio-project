@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import Nav from './components/Header';
 import About from './components/About';
 import Project from './components/Project';
+import Resume from './components/Resume';
 import ContactForm from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
   const [contactSelected, setContactSelected] = useState(false);
@@ -31,7 +33,9 @@ function App() {
         <div>
             <About></About>
             <Project></Project>
+            <Resume></Resume>
             <ContactForm></ContactForm>
+            <Footer></Footer>
         </div>
       </main>
     </div>

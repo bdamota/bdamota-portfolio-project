@@ -30,7 +30,7 @@ function Project() {
     },
     {
       image: 'mylingual.png',
-      name: 'MyLingual',
+      name: 'Mylingual',
       description: 'A web-based social network that connects people who are learning the same languages. ',
       tech: 'HTML5 / CSS3 / Bootstrap / JavaScript / Node / Express / MySQL / Handlebars / Sequelize / Bcrypt / Heroku',
       github: 'https://github.com/Achigas/MyLingual',

@@ -184,6 +184,7 @@ textarea {
 .my-1 {
   margin-top: var(--spacing-one);
   margin-bottom: var(--spacing-one);
+  height: 600px;
 }
 
 .my-2 {
@@ -194,6 +195,15 @@ textarea {
 
 .headerImage {
   height: 600px;
+}
+
+#portfolio, #resume, #contact {
+  padding-top: 50px;
+}
+
+#footer {
+  padding-top: 200px;
+  margin-left: 35%;
 }
 
 .my-5 {
