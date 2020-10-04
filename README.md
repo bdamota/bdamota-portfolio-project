@@ -7,6 +7,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Screenshot 
 ![image](https://github.com/bdamota/bdamota-portfolio-project/blob/master/Screen%20Shot%202020-10-04%20at%2012.04.45%20AM.png)
 
+## Live Site 
+https://bdamota.github.io/bdamota-portfolio-project/
+
 ## Installation 
 * Clone GitHub repository
 * Ensure that npm is installed. 
